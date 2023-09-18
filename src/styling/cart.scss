@@ -1,0 +1,110 @@
+
+.cart {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    >main {
+        padding: 2rem;
+        overflow-y: auto;
+    }
+
+    >aside {
+        border-radius: 100px 0 0 100px;
+        background-color: rgb(240, 238, 238);
+        color: rgb(19, 17, 17);
+        height: 100%;
+        width: 100%;
+        box-shadow: -10px 0px 20px rgba(0, 0, 0, 182);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        >h2 {
+            margin: 1rem;
+            font-weight: 600;
+            font-size: 2rem;
+            letter-spacing: 2px;
+
+            &:last-of-type {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.cartItem {
+
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    padding: 1rem;
+    transition: transform 0.2s linear;
+    background-color: rgb(240, 238, 238);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    align-items: center;
+
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+
+    }
+
+    >article {
+        font-size: 40px;
+        font-weight: 400;
+        padding-left: 130px;
+        color: black;
+        h3 {
+            text-transform: uppercase;
+        }
+
+    }
+    
+}
+
+.but {
+    display: flex;
+    flex-direction: row;
+    color: black;
+
+    Button{
+        width: 30px;
+        height: 30px;
+        border: none;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        
+        &:hover{
+            background-color: red;
+        }
+        
+    }
+    p{
+        width: 30px;
+        height: 30px;
+        display: grid;
+        place-items: center;
+        font-weight: bold;
+        // font-size: 35px;
+
+    }
+    >svg{
+        cursor: pointer;
+        font-size: 1.5rem;
+        display: inline-block;
+        margin:auto;
+        color: black;
+        transition: transform 0.4s linear;
+        &:hover{
+            color: red;
+            transform: scale(1.2);
+        }
+    }
+    
+}

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.imgicons {
+    display: flex;
+
+    // height: fit-content;
+}
+
+.icon {
+    padding-top: 40px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.5s linear;
+    width: 20%;
+  img{
+    border-left: 1px solid rgb(219, 209, 209);
+    border-right: 1px solid rgb(219, 209, 209);
+  }
+    h1{
+        font-weight: bold;
+        text-decoration:wavy;
+    }
+    img:hover{
+        cursor: pointer;
+        box-shadow: 3px 2px 20px rgb(88, 78, 78);
+        transition: box-shadow 0.7s ease;
+    }
+}
+.icon:hover{
+    transform: scale(1.1);
+
+}

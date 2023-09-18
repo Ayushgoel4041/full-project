@@ -1,0 +1,147 @@
+// * {
+    //     margin: 0;
+//     padding: 0;
+// }
+
+.top {
+    // position: sti;
+    // background-image: url('../img/drdo_logo_0.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(44, 44, 82);
+    width: 100%;
+    height: 10vh;
+}
+.data{
+    p{
+        font-size:70px;
+        font-weight: 500;
+        padding-top: 30px;
+    }
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.head {
+    margin-top: 60px;
+    // text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+
+    h1 {
+        box-sizing: border-box 2px;
+        
+        // border-left: 5px solid blue;
+        padding: 15px;
+        margin: 15px;
+        transition:transform 0.5s linear;
+    }
+    link{
+        border-left: 2px solid black;
+        
+    }
+    h1:hover {
+        border-left: 5px solid rgb(10, 10, 10);
+        transform: scale(1.2);
+        
+        background-color:  rgb(172, 172, 216);
+        cursor: pointer;
+        
+        
+    }
+}
+
+.foot {
+
+    margin-top: 55px;
+    padding: 23px;
+    
+    Button {
+        margin: 23px 15px 23px 15px;
+        transition:transform 0.5s linear;
+    }
+    Button:hover{
+    transform: scale(1.5);
+    
+    }
+
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin: 156px;
+
+    Input {
+        
+        width: 467px;
+        padding: 22px 32px 22px 32px;
+
+    }
+    
+    a {
+        color: blue;
+        text-decoration: underline;
+    }
+    
+    a:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+.search {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 12px;
+    margin-right: 22px;
+
+    Input {
+        border: 1px solid;
+    }
+}
+
+.wel {
+    width: 70%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.over {
+    padding: 50px 230px 50px 230px;
+}
+
+.ban {
+    display: flex;
+    
+    padding-top: 50px;
+    height: 30vh;
+    width: 100%;
+    gap: 30px;
+    object-fit: cover;
+}
+
+Button{
+    p{
+        position: absolute;
+        top: -5px;
+        right: 5px;
+        font-size: 20px;
+        background-color: aliceblue;
+        color: black;
+        border-radius: 100px;
+        width: 20px;
+    }
+}

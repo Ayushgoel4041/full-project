@@ -1,0 +1,129 @@
+.page {
+    display: flex;
+    position: relative;
+}
+
+.active {
+    color: cadetblue;
+    font-weight: bold;
+    border-left: 6px solid rgb(98, 98, 131);
+    padding-left: 42px;
+}
+
+
+.product {
+    position: sticky;
+    height: 80vh;
+    display: flex;
+    top: 80px;
+    flex-direction: column;
+    margin: 100px 50px 50px 50px;
+    width: 30%;
+    z-index: 1;
+
+    h1 {
+        font-size: 35px;
+        padding-bottom: 40px;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    a {
+        font-size: 20px;
+       
+        margin-bottom: 20px;
+        padding-left: 22px;
+        transition: transform 0.5s linear;
+    }
+
+    a:hover {
+        color: blue;
+        transform: scale(1.1);
+        padding-left: 42px;
+        font-weight: bold;
+    }
+}
+
+.penicon {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-size: cover;
+    // margin-left: 350px ;
+}
+
+
+.penhandle {
+
+    transition: transform 0.2s linear;
+    background-color: rgb(240, 238, 238);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px 20px;
+    width: 300%;
+    position: relative;
+
+    img {
+        width: 20%;
+        object-fit: cover;
+    }
+
+    h1 {
+        font-size: 25px;
+        // padding-lef;
+        font-weight: 600;
+
+        color: rgb(51, 44, 44);
+
+    }
+
+    Button {
+
+        right: -20px;
+        top: -10px;
+        border-radius: 50%;
+        z-index: 22;
+        position: absolute;
+        background-color: rgb(175, 5, 5);
+        transition: 0.4s linear;
+    }
+
+    Button:hover {
+        transform: scale(1.5);
+        background-color: rgb(175, 5, 5);
+
+    }
+
+    .price {
+        color: rgb(51, 44, 44);
+        font-size: 20px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        text-align: right;
+
+        h2 {
+            font-size: 23px;
+        }
+
+        h3 {
+            color: red;
+        }
+
+        .star {
+            display: flex;
+            justify-content: space-between;
+            color: rgb(156, 156, 5);
+        }
+    }
+}
+
+.penhandle:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+

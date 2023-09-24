@@ -20,6 +20,7 @@ import Login from './Login';
 import Home from './Home';
 import ImgIcon from './ImgIcon';
 import Cart from './Cart';
+import SignUp from './SignUp';
 import { useSelector } from 'react-redux'; 
 import { FiShoppingCart } from 'react-icons/fi';
 const Header = () => {
@@ -60,9 +61,9 @@ const Header = () => {
                 <DrawerContent>
                     <DrawerCloseButton />
                     <DrawerHeader>
-                        {/* <div className="logo">
+                        <div className="logo">
                             <Image src={logo} w={'25'} h={'175'} />
-                        </div> */}
+                        </div>
                         <DrawerBody>
                             <div className="head">
                                 <Link to={'Home'}><h1>HOME</h1></Link>
@@ -81,9 +82,13 @@ const Header = () => {
                                 Login
                             </Button>
                             </Link>
+
+                            <Link to={'SignUp'}>
+
                             <Button>
                                 Sign up
                             </Button>
+                            </Link>
                         </div>
                     </DrawerFooter>
                 </DrawerContent>

@@ -2,6 +2,7 @@ import { BrowserRouter as Router , Routes , Route } from "react-router-dom";
 import Header from "./components/Header";
 import  "./styling/index.scss"
 import Login from "./components/Login";
+import SignUp from "./components/SignUp";
 import Home from "./components/Home";
 import ImgIconpage from "./components/ImgIconpage";
 import ImgRollerpen from "./components/ImgRollerpen";
@@ -35,9 +36,11 @@ function App() {
     <Router>
       <Header/>
       <Routes>
+        <Route exact path="/" Component={Home}/>
         <Route exact path="/Home" Component={Home}/>
         <Route exact path="/Login" Component={Login}/>
         <Route exact path="/Cart" Component={Cart}/>
+        <Route exact path="/SignUp" Component={SignUp}/>
 
         <Route exact path="/ImgIconpage" Component={ImgIconpage}/>
         <Route exact path="/ImgRollerpen" Component={ImgRollerpen}/>

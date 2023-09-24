@@ -6,7 +6,7 @@ import {
     InputRightElement,
     Button,
 } from '@chakra-ui/react';
-import "../styling/index.scss"
+// import ".../src"
 import axios from 'axios';
 
 const SignUp = () => {
